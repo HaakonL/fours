@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8EBDAD92889A2FE006852DD /* KRVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDAD82889A2FE006852DD /* KRVApp.swift */; };
+		F8EBDADD2889A2FF006852DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EBDADC2889A2FF006852DD /* Assets.xcassets */; };
+		F8EBDAE02889A2FF006852DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8EBDADF2889A2FF006852DD /* Preview Assets.xcassets */; };
+		F8EBDAE7288A8964006852DD /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDAE6288A8964006852DD /* BoardView.swift */; };
+		F8EBDAE9288B1E7E006852DD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDAE8288B1E7E006852DD /* MainView.swift */; };
+		F8EBDB13288D1DB0006852DD /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB12288D1DB0006852DD /* BoardViewModel.swift */; };
+		F8EBDB15288D1DD0006852DD /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB14288D1DD0006852DD /* Player.swift */; };
+		F8EBDB17288D1DD6006852DD /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB16288D1DD6006852DD /* Cell.swift */; };
+		F8EBDB1B288D1E2B006852DD /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB1A288D1E2B006852DD /* Color+Extensions.swift */; };
+		F8EBDB1E288D1E4D006852DD /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = F8EBDB1D288D1E4D006852DD /* Resolver */; };
+		F8EBDB23288D2E1C006852DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB22288D2E1C006852DD /* User.swift */; };
+		F8EBDB26288D2FBF006852DD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB25288D2FBF006852DD /* Logger.swift */; };
+		F8EBDB29288D3B03006852DD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8EBDB28288D3B03006852DD /* FirebaseAnalytics */; };
+		F8EBDB2B288D3B03006852DD /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8EBDB2A288D3B03006852DD /* FirebaseCrashlytics */; };
+		F8EBDB2D288D3B03006852DD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F8EBDB2C288D3B03006852DD /* FirebaseDatabase */; };
+		F8EBDB2F288D3B4C006852DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8EBDB2E288D3B4C006852DD /* GoogleService-Info.plist */; };
+		F8EBDB31288E898D006852DD /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB30288E898D006852DD /* Move.swift */; };
+		F8EBDB33288E8FC5006852DD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB32288E8FC5006852DD /* Game.swift */; };
+		F8EBDB35288FF8A0006852DD /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB34288FF8A0006852DD /* Bootstrap.swift */; };
+		F8EBDB37288FF8D0006852DD /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBDB36288FF8D0006852DD /* UserService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8EBDAD52889A2FE006852DD /* KRV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8EBDAD82889A2FE006852DD /* KRVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRVApp.swift; sourceTree = "<group>"; };
+		F8EBDADC2889A2FF006852DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8EBDADF2889A2FF006852DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8EBDAE6288A8964006852DD /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		F8EBDAE8288B1E7E006852DD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F8EBDB12288D1DB0006852DD /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
+		F8EBDB14288D1DD0006852DD /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F8EBDB16288D1DD6006852DD /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		F8EBDB1A288D1E2B006852DD /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		F8EBDB22288D2E1C006852DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F8EBDB25288D2FBF006852DD /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F8EBDB2E288D3B4C006852DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8EBDB30288E898D006852DD /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		F8EBDB32288E8FC5006852DD /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F8EBDB34288FF8A0006852DD /* Bootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrap.swift; sourceTree = "<group>"; };
+		F8EBDB36288FF8D0006852DD /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8EBDAD22889A2FE006852DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EBDB2B288D3B03006852DD /* FirebaseCrashlytics in Frameworks */,
+				F8EBDB29288D3B03006852DD /* FirebaseAnalytics in Frameworks */,
+				F8EBDB2D288D3B03006852DD /* FirebaseDatabase in Frameworks */,
+				F8EBDB1E288D1E4D006852DD /* Resolver in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8EBDACC2889A2FE006852DD = {
+			isa = PBXGroup;
+			children = (
+				F8EBDAD72889A2FE006852DD /* KRV */,
+				F8EBDAD62889A2FE006852DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8EBDAD62889A2FE006852DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDAD52889A2FE006852DD /* KRV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8EBDAD72889A2FE006852DD /* KRV */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDB24288D2FB4006852DD /* Helpers */,
+				F8EBDB21288D1EF0006852DD /* Services */,
+				F8EBDB19288D1E21006852DD /* Extensions */,
+				F8EBDB11288D1D83006852DD /* ViewModels */,
+				F8EBDB10288D1D7C006852DD /* Views */,
+				F8EBDB0F288D1D74006852DD /* Models */,
+				F8EBDAD82889A2FE006852DD /* KRVApp.swift */,
+				F8EBDB34288FF8A0006852DD /* Bootstrap.swift */,
+				F8EBDADC2889A2FF006852DD /* Assets.xcassets */,
+				F8EBDB2E288D3B4C006852DD /* GoogleService-Info.plist */,
+				F8EBDADE2889A2FF006852DD /* Preview Content */,
+			);
+			path = KRV;
+			sourceTree = "<group>";
+		};
+		F8EBDADE2889A2FF006852DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDADF2889A2FF006852DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8EBDB0F288D1D74006852DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDB14288D1DD0006852DD /* Player.swift */,
+				F8EBDB16288D1DD6006852DD /* Cell.swift */,
+				F8EBDB22288D2E1C006852DD /* User.swift */,
+				F8EBDB30288E898D006852DD /* Move.swift */,
+				F8EBDB32288E8FC5006852DD /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8EBDB10288D1D7C006852DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDB18288D1DFD006852DD /* Board */,
+				F8EBDAE8288B1E7E006852DD /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8EBDB11288D1D83006852DD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDB12288D1DB0006852DD /* BoardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F8EBDB18288D1DFD006852DD /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDAE6288A8964006852DD /* BoardView.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		F8EBDB19288D1E21006852DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDB1A288D1E2B006852DD /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8EBDB21288D1EF0006852DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDB36288FF8D0006852DD /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F8EBDB24288D2FB4006852DD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBDB25288D2FBF006852DD /* Logger.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8EBDAD42889A2FE006852DD /* KRV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8EBDAE32889A2FF006852DD /* Build configuration list for PBXNativeTarget "KRV" */;
+			buildPhases = (
+				F8EBDAD12889A2FE006852DD /* Sources */,
+				F8EBDAD22889A2FE006852DD /* Frameworks */,
+				F8EBDAD32889A2FE006852DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRV;
+			packageProductDependencies = (
+				F8EBDB1D288D1E4D006852DD /* Resolver */,
+				F8EBDB28288D3B03006852DD /* FirebaseAnalytics */,
+				F8EBDB2A288D3B03006852DD /* FirebaseCrashlytics */,
+				F8EBDB2C288D3B03006852DD /* FirebaseDatabase */,
+			);
+			productName = KRV;
+			productReference = F8EBDAD52889A2FE006852DD /* KRV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8EBDACD2889A2FE006852DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F8EBDAD42889A2FE006852DD = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F8EBDAD02889A2FE006852DD /* Build configuration list for PBXProject "KRV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8EBDACC2889A2FE006852DD;
+			packageReferences = (
+				F8EBDB1C288D1E4D006852DD /* XCRemoteSwiftPackageReference "Resolver" */,
+				F8EBDB27288D3B03006852DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F8EBDAD62889A2FE006852DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8EBDAD42889A2FE006852DD /* KRV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8EBDAD32889A2FE006852DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EBDAE02889A2FF006852DD /* Preview Assets.xcassets in Resources */,
+				F8EBDADD2889A2FF006852DD /* Assets.xcassets in Resources */,
+				F8EBDB2F288D3B4C006852DD /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8EBDAD12889A2FE006852DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EBDB31288E898D006852DD /* Move.swift in Sources */,
+				F8EBDAE7288A8964006852DD /* BoardView.swift in Sources */,
+				F8EBDAE9288B1E7E006852DD /* MainView.swift in Sources */,
+				F8EBDAD92889A2FE006852DD /* KRVApp.swift in Sources */,
+				F8EBDB15288D1DD0006852DD /* Player.swift in Sources */,
+				F8EBDB26288D2FBF006852DD /* Logger.swift in Sources */,
+				F8EBDB37288FF8D0006852DD /* UserService.swift in Sources */,
+				F8EBDB33288E8FC5006852DD /* Game.swift in Sources */,
+				F8EBDB23288D2E1C006852DD /* User.swift in Sources */,
+				F8EBDB35288FF8A0006852DD /* Bootstrap.swift in Sources */,
+				F8EBDB1B288D1E2B006852DD /* Color+Extensions.swift in Sources */,
+				F8EBDB13288D1DB0006852DD /* BoardViewModel.swift in Sources */,
+				F8EBDB17288D1DD6006852DD /* Cell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F8EBDAE12889A2FF006852DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8EBDAE22889A2FF006852DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8EBDAE42889A2FF006852DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KRV/Preview Content\"";
+				DEVELOPMENT_TEAM = AZG82D2WT4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fours;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = no.lageng.krv.KRV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8EBDAE52889A2FF006852DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KRV/Preview Content\"";
+				DEVELOPMENT_TEAM = AZG82D2WT4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fours;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = no.lageng.krv.KRV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8EBDAD02889A2FE006852DD /* Build configuration list for PBXProject "KRV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8EBDAE12889A2FF006852DD /* Debug */,
+				F8EBDAE22889A2FF006852DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8EBDAE32889A2FF006852DD /* Build configuration list for PBXNativeTarget "KRV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8EBDAE42889A2FF006852DD /* Debug */,
+				F8EBDAE52889A2FF006852DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8EBDB1C288D1E4D006852DD /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		F8EBDB27288D3B03006852DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8EBDB1D288D1E4D006852DD /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8EBDB1C288D1E4D006852DD /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		F8EBDB28288D3B03006852DD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8EBDB27288D3B03006852DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F8EBDB2A288D3B03006852DD /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8EBDB27288D3B03006852DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		F8EBDB2C288D3B03006852DD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8EBDB27288D3B03006852DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F8EBDACD2889A2FE006852DD /* Project object */;
+}
